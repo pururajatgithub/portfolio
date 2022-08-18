@@ -54,15 +54,14 @@
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
-
+              
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="/">Home</a></li>
                 <li class="has-children">
                   <a href="single.html">Gallery</a>
                   <ul class="dropdown">
-                    <li><a href="#">Nature</a></li>
-                    <li><a href="#">Portrait</a></li>
-                    <li><a href="#">People</a></li>
+                    <li><a href="{% url 'photos' %}?category=1">Nature</a></li>
+                    <li><a href="{% url 'photos' %}?category=2">Portrait</a></li>
                     <li><a href="#">Architecture</a></li>
                     <li><a href="#">Animals</a></li>
                     <li><a href="#">Sports</a></li>
@@ -114,6 +113,11 @@
 
     {% block content %}{% endblock %}
     
+
+
+    <div class="container-fluid text-center">
+      <br>
+    </div>
 
     <div class="footer py-4">
       <div class="container-fluid text-center">
