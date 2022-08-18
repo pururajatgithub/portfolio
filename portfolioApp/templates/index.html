@@ -11,8 +11,8 @@
       <div class="col-lg-4">
         <div class="image-wrap-2">
           <div class="image-info">
-            <h2 class="mb-3">{{ category.name}}</h2>
-            <a href="images.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            <h2 class="mb-3">{{ category.name }}</h2>
+            <a href="photos/?category={{category.id}}" class="btn btn-outline-white py-2 px-4">More Photos</a>
           </div>
           <img src="{{ category.category_image.url }}" alt="Image" class="img-fluid">
         </div>
